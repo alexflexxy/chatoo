@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<figure class="">
+    <img src=" {% if userprofileinfo.profile_pic %} {{ userprofileinfo.profile_pic.url }} 
+    {% else %} {% static 'chatoo/images/chattoo_img.png' %} {% endif %} ">
+</figure>
+
+{% endblock content %}
